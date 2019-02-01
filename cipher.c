@@ -456,13 +456,13 @@ Double_t GetMaximumValue(TH2D* hist)
 ////////////////////////////////////////////////
 ////////////////////////////////////////////////
 
-Int_t GetFirstEntryEventID(TTree* myT)
-{
-  RAT::DS::Root* ds = new RAT::DS::Root();
-  myT->SetBranchAddress("ds", &ds);
-  myT->GetEntry(0);
-  Int_t evID = ds->GetTS(0)->GetEventID();
-  return evID;
+// Int_t GetFirstEntryEventID(TTree* myT)
+// {
+//   RAT::DS::Root* ds = new RAT::DS::Root();
+//   myT->SetBranchAddress("ds", &ds);
+//   myT->GetEntry(0);
+//   Int_t evID = ds->GetTS(0)->GetEventID();
+//   return evID;
 }
 
 ////////////////////////////////////////////////
